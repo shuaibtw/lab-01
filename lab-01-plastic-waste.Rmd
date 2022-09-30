@@ -83,3 +83,12 @@ plastic_waste_edit <- plastic_waste %>%
 # remove this comment and add the code for Exercise 8 here
 ```
 
+> ggplot(data = plastic_waste, aes(x = plastic_waste_per_cap)) +
++     geom_histogram()
+
+> ggplot(data = plastic_waste, 
++        mapping = aes(x = plastic_waste_per_cap, 
++                      color = continent, 
++                      fill = continent)) +
++     geom_density(alpha = 0.005)
+
