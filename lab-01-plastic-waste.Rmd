@@ -92,3 +92,8 @@ plastic_waste_edit <- plastic_waste %>%
 +                      fill = continent)) +
 +     geom_density(alpha = 0.005)
 
+> ggplot(data = plastic_waste, 
++        mapping = aes(x = continent, 
++                      y = plastic_waste_per_cap,
++                      fill = continent)) + 
++ geom_violin()
